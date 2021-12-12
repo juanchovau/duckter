@@ -1,9 +1,22 @@
+:root{
+  --base-fornt: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  --primary-color:#0099ff;
+  --primary-color-transparent:#0099ff66;
+  --secundary-color: #1c5480;
+  --black-color: #000;
+  --white-color: #fff;
+  --background: 
+    radial-gradient(var(--primary-color-transparent) 1px, transparent 1px),
+    radial-gradient(var(--primary-color-transparent) 1px, transparent 1px);
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  height: 100vh;
+  font-family: var(--base-fornt);
 }
 
 a {
@@ -14,3 +27,5 @@ a {
 * {
   box-sizing: border-box;
 }
+
+
