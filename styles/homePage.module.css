@@ -1,0 +1,36 @@
+
+.container header, .container nav{
+    height: 50px;
+    width: inherit;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    background: var(--white-color);
+}
+.container header{
+    border-bottom: 1px solid #ccc;
+
+}
+.container h2{
+    font-size: 21px;
+}
+
+.container main{
+    padding-top: 60px;
+    height: calc(100% - 50px);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    overflow: scroll;
+}
+
+.container main::-webkit-scrollbar {
+    display: none;
+  }
+
+
+.container nav{
+    border-top: 1px solid #ccc;
+    position: sticky;
+    bottom: 0;
+}

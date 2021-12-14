@@ -1,8 +1,8 @@
 import Head from 'next/head'
 import styles from '../styles/AppLayout.module.css'
 
-export default function AppLayout({children}) {
-    return(
+export default function AppLayout ({ children }) {
+  return (
         <div className={styles.mainLayout}>
             <Head>
                 <title>Duckter</title>
@@ -11,5 +11,5 @@ export default function AppLayout({children}) {
             </Head>
             {children}
         </div>
-    )
+  )
 }
